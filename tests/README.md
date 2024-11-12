@@ -30,7 +30,7 @@ This folder contains unit tests for various geometric shapes: circles, rectangle
 
 ## Running the Tests
 
-To run the tests, navigate to the directory containing the test files and execute the following command:
+To run the tests, navigate to the main directory and execute the following command:
 
 ```bash
 
