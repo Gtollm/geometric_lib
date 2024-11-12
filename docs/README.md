@@ -29,3 +29,4 @@ Library for doing general geometric arithmetics.
 - 9fffe0e: Added description for rectangle functions.
 - 78dc731: Added description for square functions.
 - eb268a9: Added description for triangle functions.
+- 5d37902: Tests implemented for all functions
