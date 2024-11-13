@@ -6,6 +6,8 @@ class CircleTestCase(unittest.TestCase):
    def test_area_zero(self):
        res = area(0)
        self.assertEqual(res, 0)
+   def test_area_neg(self):
+       self.assertRaises(Exception, lambda:area(-5));
    def test_area_int(self):
        res = area(10)
        self.assertEqual(res, 100 * pi)
@@ -19,6 +21,8 @@ class CircleTestCase(unittest.TestCase):
    def test_perimeter_zero(self):
        res = perimeter(0)
        self.assertEqual(res, 0)
+   def test_perimeter_neg(self):
+       self.assertRaises(Exception, lambda:perimeter(-5));
    def test_perimeter_int(self):
        res = perimeter(10)
        self.assertEqual(res, 20 * pi)

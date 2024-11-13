@@ -3,8 +3,9 @@ from square import *
 
 class SquareTestCase(unittest.TestCase):
    def test_area_zero(self):
-       res = area(0)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:area(0));
+   def test_area_neg(self):
+       self.assertRaises(Exception, lambda:area(-5));
    def test_area_int(self):
        res = area(10)
        self.assertEqual(res, 100)
@@ -16,8 +17,9 @@ class SquareTestCase(unittest.TestCase):
        self.assertEqual(res, 4000000000000000000000000000000000000000000000000)
 
    def test_perimeter_zero(self):
-       res = perimeter(0)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:perimeter(0));
+   def test_perimeter_neg(self):
+       self.assertRaises(Exception, lambda:perimeter(-5));
    def test_perimeter_int(self):
        res = perimeter(10)
        self.assertEqual(res, 40)

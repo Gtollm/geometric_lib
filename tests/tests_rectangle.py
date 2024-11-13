@@ -3,8 +3,9 @@ from rectangle import *
 
 class RectangleTestCase(unittest.TestCase):
    def test_area_zero(self):
-       res = area(10, 0)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:area(10,0));
+   def test_area_neg(self):
+       self.assertRaises(Exception, lambda:area(10,-5));
    def test_area_square(self):
        res = area(10, 10)
        self.assertEqual(res, 100)
@@ -15,11 +16,9 @@ class RectangleTestCase(unittest.TestCase):
        res = area(2.5, 2.5)
        self.assertEqual(res, 6.25)
    def test_area_zero_double(self):
-       res = area(0, 7.5)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:area(0, 7.5));
    def test_area_double_zero(self):
-       res = area(2.5, 0)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:area(2.5, 0));
    def test_area_int_double(self):
        res = area(2, 7.5)
        self.assertEqual(res, 15)
@@ -37,9 +36,10 @@ class RectangleTestCase(unittest.TestCase):
    def test_perimeter_square(self):
        res = perimeter(10, 10)
        self.assertEqual(res, 40)
+   def test_perimeter_neg(self):
+       self.assertRaises(Exception, lambda:perimeter(10,-5));
    def test_perimeter_zero(self):
-       res = perimeter(0, 10)
-       self.assertEqual(res, 0)
+       self.assertRaises(Exception, lambda:perimeter(0, 10));
    def test_perimeter_int_int(self):
        res = perimeter(10, 2)
        self.assertEqual(res, 24)
