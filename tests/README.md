@@ -8,10 +8,10 @@ This folder contains unit tests for various geometric shapes: circles, rectangle
 - [Installation](#installation)
 - [Running the Tests](#running-the-tests)
 - [Test Cases](#test-cases)
-  - [Circle Tests](#circle-tests)
-  - [Rectangle Tests](#rectangle-tests)
-  - [Square Tests](#square-tests)
-  - [Triangle Tests](#triangle-tests)
+- [Circle Tests](#circle-tests)
+- [Rectangle Tests](#rectangle-tests)
+- [Square Tests](#square-tests)
+- [Triangle Tests](#triangle-tests)
 
 ## Requirements
 
@@ -54,20 +54,18 @@ The `CircleTestCase` class tests the following functionalities of the circle mod
 The `RectangleTestCase` class tests the following functionalities of the rectangle module:
 
 - Area calculations for various combinations of width and height, including cases with zero dimensions.
-- Perimeter calculations for various combinations of width and height.
+- Perimeter calculations for various combinations of width and height, including cases with zero dimensions.
 
 ### Square Tests
 
 The `SquareTestCase` class tests the following functionalities of the square module:
 
-- Area calculations for square dimensions of 0, integers, and floating-point numbers.
-- Perimeter calculations for square dimensions of integers and floating-point numbers.
+- Area calculations for square dimensions of 0, integers, and floating-point numbers, including cases with zero dimensions.
+- Perimeter calculations for square dimensions of integers and floating-point numbers, including cases with zero dimensions.
 
 ### Triangle Tests
 
 The `TriangleTestCase` class tests the following functionalities of the triangle module:
 
 - Area calculations for various base and height combinations, including cases with zero dimensions.
-- Perimeter calculations for various combinations of the three sides of the triangle.
-
-
+- Perimeter calculations for various combinations of the three sides of the triangle, including cases with zero dimensions.

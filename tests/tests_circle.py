@@ -12,6 +12,9 @@ class CircleTestCase(unittest.TestCase):
    def test_area_double(self):
        res = area(2.5)
        self.assertEqual(res, 6.25 * pi)
+   def test_area_big(self):
+       res = area(2000000000000000000000000)
+       self.assertEqual(res, 4000000000000000000000000000000000000000000000000 * pi)
 
    def test_perimeter_zero(self):
        res = perimeter(0)
@@ -22,4 +25,6 @@ class CircleTestCase(unittest.TestCase):
    def test_perimeter_double(self):
        res = perimeter(2.5)
        self.assertEqual(res, 5 * pi)
-
+   def test_perimeter_big(self):
+       res = perimeter(2000000000000000000000000)
+       self.assertEqual(res, 4000000000000000000000000 * pi)
